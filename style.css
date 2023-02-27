@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+/* start of dashboard styling */
+
+.dashboard {
+    background-color: #1e90ff;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.dashboard .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 5px 40px 50px 0px;
+}
+
+.dashboard ul {
+    display: grid;
+}
+
+.dashboard a {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dashboard img {
+    margin: 10px 20px 10px 20px;
+}
+
+/* end of dashboard styling */
+
+/* start of header styling */
+
+.header {
+    background-color: white;
+    padding: 10px 40px 10px 20px;
+    box-shadow: 0px 8px 8px -6px gray;
+    grid-column: 2/-1;
+    grid-row: 1;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.top-left input {
+    width: 30vw;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgray;
+}
+
+.top-left .icon {
+    margin-top: 7px;
+}
+
+.top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.top-right .pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.bottom-left img {
+    width: 75px;
+    height: 75px;
+    border-radius: 37.5px;
+}
+
+.bottom-right {
+    gap: 20px;
+    display: flex;
+
+}
+
+.bottom-right button {
+    width: 90px;
+    height: 40px;
+    background-color: #1e90ff;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* end of header styling */
+
+/* start of content styling */
+
+.content {
+    background-color: lightgray;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 40px 30px 40px 20px;
+}
+
+.content .title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* start of project content styling */
+
+.project {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    gap: 20px;
+}
+
+.project .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding-right: 20px;
+}
+.project .card {
+    background-color: white;
+    border-left: 10px solid yellow;
+    border-radius: 20px;
+}
+
+.project .details {
+    margin: 20px 40px 50px 20px;
+}
+.project .project-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project .icon-container {
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    margin: 40px;
+}
+
+/* end of project content styling */
+
+/* start of announcement styling */
+.announcement {
+    grid-template-columns: 2/-1;
+    grid-template-rows: 1/2;
+}
+
+.announcement .announcement-name {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.announcement .subtext {
+    font-size: 12px;
+    color: gray;
+}
+
+.announcement .announcement-border {
+    border-bottom: 1px solid gray;
+}
+
+.announcement .card {
+    background-color: white;
+    padding: 10px 20px 10px 10px;
+    border-radius: 20px;
+    height: 300px;
+}
+
+/* end of announcement styling */
+
+/* start of trending styling */
+.trending {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
+
+.trending .card {
+    background-color: white;
+    padding: 20px 40px 0px 20px;
+    border-radius: 20px;
+    height: 348px;
+}
+
+.trending .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.trending img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+/* end of trending styling */
+
+/* end of content styling */
